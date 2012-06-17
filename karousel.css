@@ -1,0 +1,42 @@
+.carousel {
+	position: relative;
+	overflow: hidden;
+}
+.carousel .next,
+.carousel .prev {
+	position: absolute;
+	bottom: 20px;
+	z-index: 2;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+}
+.carousel .next {
+	right: 40px;
+}
+.carousel .prev {
+	left: 40px;
+}
+.carousel .indicators {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	list-style: none;
+}
+.carousel .indicators li {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0;
+	padding: 0 2px;
+	background: url(indicator.png) 0 0 no-repeat;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.carousel .indicators li.current {
+	background-position: 0 -20px;
+}
