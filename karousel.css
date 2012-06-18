@@ -1,9 +1,9 @@
-.carousel {
+.karousel {
 	position: relative;
 	overflow: hidden;
 }
-.carousel .next,
-.carousel .prev {
+.karousel .next,
+.karousel .prev {
 	position: absolute;
 	bottom: 20px;
 	z-index: 2;
@@ -12,13 +12,13 @@
 	text-decoration: none;
 	color: #fff;
 }
-.carousel .next {
+.karousel .next {
 	right: 40px;
 }
-.carousel .prev {
+.karousel .prev {
 	left: 40px;
 }
-.carousel .indicators {
+.karousel .indicators {
 	position: absolute;
 	bottom: 20px;
 	width: 100%;
@@ -27,7 +27,7 @@
 	text-align: center;
 	list-style: none;
 }
-.carousel .indicators li {
+.karousel .indicators li {
 	display: inline-block;
 	width: 20px;
 	height: 20px;
@@ -37,6 +37,6 @@
 	text-indent: -9999px;
 	cursor: pointer;
 }
-.carousel .indicators li.current {
+.karousel .indicators li.current {
 	background-position: 0 -20px;
 }
