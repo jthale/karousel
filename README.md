@@ -54,6 +54,11 @@ $("#banner").karousel({
 
 ```
 
+## Demo
+
+You can view a basic [demo here](http://haleinteractive.com/karousel).
+
+
 ## Enhancements
 My goal is to keep this to keep this plugin as simple as possible but 2 possible enhancements I may add are:
 
