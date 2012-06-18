@@ -83,7 +83,7 @@
 		function initialize() {
 			
 			// add carousel class
-			if(!self.hasClass('carousel')) self.addClass('carousel');
+			if(!self.hasClass('karousel')) self.addClass('karousel');
 			
 			if(options.animationType == "fade") {
 				self.addClass('fading');
@@ -188,8 +188,8 @@
 			
 			event.preventDefault();
 			
-			distance = caluculateDistance();
-			direction = caluculateDirection();
+			distance = calculateDistance();
+			direction = calculateDirection();
 			
 			if(direction == "left") next();
 			else if(direction == "right") previous();
@@ -197,17 +197,17 @@
 		}
 		
 		/**
-		* Calcualte the length / distance of the swipe
+		* Calculate the length / distance of the swipe
 		*/
-		function caluculateDistance()
+		function calculateDistance()
 		{
 			return Math.round(Math.sqrt(Math.pow(end.x - start.x,2) + Math.pow(end.y - start.y,2)));
 		}
 		
 		/**
-		* Calcualte the angle of the swipe
+		* Calculate the angle of the swipe
 		*/
-		function caluculateAngle() 
+		function calculateAngle() 
 		{
 			var X = start.x-end.x;
 			var Y = end.y-start.y;
@@ -222,12 +222,12 @@
 		}
 		
 		/**
-		* Calcualte the direction of the swipe
-		* This will also call caluculateAngle to get the latest angle of swipe
+		* Calculate the direction of the swipe
+		* This will also call calculateAngle to get the latest angle of swipe
 		*/
-		function caluculateDirection() 
+		function calculateDirection() 
 		{
-			var angle = caluculateAngle();
+			var angle = calculateAngle();
 			
 			if ( (angle <= 45) && (angle >= 0) ) 
 				return "left";
